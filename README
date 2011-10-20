@@ -20,10 +20,10 @@ for plotting pois on map through index search
 PHP
 
 -- setup --
-Create an account on http://api.eniro.com
-create file "config.php" in root
-put $key and $profile in config.php
-go crazy
+- Create an account on http://api.eniro.com
+- Create file "config.php" in root
+- Put $key and $profile in config.php
+- Go crazy
 
 
 

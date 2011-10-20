@@ -8,18 +8,17 @@
             this.$list = this.el.find("ul.chosen-list");
             this.$img = $("#map img.the-map");
             this.$urlArea = $("#map textarea.map-url");
-            this._rendered = false;
         },
 
-        render : function (result) {
+        render : function (company) {
             var self = this,
-            idx = 0;
+            _idx = 1;
+            this.$list.empty();
             
-            this._rendered = true;
-            _.each(app.chosenList.models, function (result) {
-                //result.idx = idx;
-                self.add(result);
-                idx++;
+            _.each(app.chosenList.models, function (company) {
+                company.set({idx : _idx});
+                self.add(company);
+                _idx++;
             });
 
             return this;
@@ -29,12 +28,11 @@
             return ich.tmplChosen(data);
         },
 
-        add : function (result) {
-            var self = this,
-                $li = this.template(result.toJSON());
+        add : function (company) {
+            var $li = this.template(company.toJSON());
             this.$list.append($li);
             $li.find(".remove-from-selection").bind("click", function(e){
-                app.chosenList.remove(result);
+                app.chosenList.remove(company);
             });
 
             this.renderMap();

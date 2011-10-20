@@ -10,12 +10,12 @@ var ChosenList = Backbone.Collection.extend({
             model : this.model
         });
 
-        this.bind("add", function (result) {
-            this.view.add(result);
+        this.bind("add", function (company) {
+            this.view.render(company);
         });
 
-        this.bind("remove", function (result) {
-            this.view.remove(result);
+        this.bind("remove", function (company) {
+            this.view.remove(company);
         });
 
     },
@@ -26,7 +26,7 @@ var ChosenList = Backbone.Collection.extend({
             "&iheight=400";
 
         _.each(this.models, function (company, i) {
-            var idx = i+1;
+            var idx = company.get("idx");
             url += "&p=" + company.get("lon") + "," + company.get("lat") + ";yp-pin" + idx;
             url += "&yp-pin" + idx + "=yellow-" + idx + ".png"
         });

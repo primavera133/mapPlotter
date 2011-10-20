@@ -12,9 +12,9 @@
         add : function (result) {
             var self = this;
             var template = this.getTemplate(result.toJSON());
-
             $(template).find(".add-to-selection").bind("click", function(e){
-                self.addResultToSelection(e, result);
+                var company = new Company(result.toJSON());
+                self.addResultToSelection(e, company);
             });
 
             this.el.append(template);
