@@ -98,7 +98,7 @@ sub { bottom: -0.25em; }
    Lists
    ========================================================================== */
 
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+ul, ol { margin: 1em 0; padding: 0 0 0 10px; }
 dd { margin: 0 0 0 40px; }
 nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 
@@ -289,4 +289,123 @@ td { vertical-align: top; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
+}
+
+
+
+
+
+
+header h1 {
+    margin: 50px 0 20px 50px;
+    display: inline-block;
+    width: auto;
+}
+header h2 {
+    margin: 20px 0 20px 20px;
+    display: inline-block;
+
+}
+
+
+#search {
+    display: inline-block;
+    vertical-align: baseline;
+    border:  solid 1px #ca0;
+    width: 95%;
+    background-color: #fd3;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#searchForm fieldset {
+    position: relative;
+}
+
+#searchForm legend {
+    position: absolute;
+}
+
+#searchForm label {
+    display: inline-block;
+    width: 100px;
+}
+
+#searchForm .search-field {
+    margin: 5px 0;
+}
+#searchForm .search-field.what {
+    margin-top: 25px;
+
+}
+
+#results {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    background-color: #f9f9f0;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#results .results-list li,
+#chosen .chosen-list li {
+    margin : 3px 0;
+    list-style: none;
+}
+
+#results .results-list .idx,
+#chosen .chosen-list .idx {
+    display: inline-block;
+    width: 20px;
+}
+
+#results .results-list .company-name,
+#chosen .chosen-list .company-name {
+    font-weight: bold;
+}
+
+#results ul a,
+#chosen ul a {
+    background-color: #ccc;
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px #333;
+    color: #555;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 10px;
+    line-height: 15px;
+    margin: 2px 10px 2px 0;
+    padding: 0 4px 6px 7px;
+    width: 10px;
+}
+
+#chosen {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    background-color: #f9f9f0;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#map {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    background-color: #f9f9f0;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#map textarea.map-url {
+    display: block;
+    margin: 10px 0;
+    width: 400px;
+    height: 200px;
 }
