@@ -21,7 +21,8 @@ PHP
 
 -- setup --
 Create an account on http://api.eniro.com
-put key and profile in config.php
+create file "config.php" in root
+put $key and $profile in config.php
 go crazy
 
 
