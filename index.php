@@ -53,7 +53,7 @@ include "config.php";
 
                 <form id="searchForm" action="http://api.eniro.com/cs/search/basic" method="get">
                     <input type="hidden" name="key" value="<?= $key ?>" />
-                    <input type="hidden" name="profile" value="<?= profile ?>" />
+                    <input type="hidden" name="profile" value="<?= $profile ?>" />
                     <input type="hidden" name="country" value="se" />
                     <input type="hidden" name="version" value="1.0.1" />
                     <input type="hidden" name="to_list" value="25" />
