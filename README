@@ -4,13 +4,20 @@ for plotting pois on map through index search
 
 -- using --
 - Eniro Yellow API - http://api.eniro.com
-- Eniro WCM:GetAPI
+- Eniro WCM:GetAPI - 
 
 -- Components -
 - HTML5 Boilerplate - http://html5boilerplate.com/
 - Backbone.js - http://documentcloud.github.com/backbone/
-- jQuery 1.6.2
-- jQuery Mustache templating
-- ICanHaz.js templating addon
+- Underscore.js - http://documentcloud.github.com/underscore/
+- jQuery 1.6.2 - http://jquery.com/
+- Mustache.js templating - https://github.com/janl/mustache.js/
+- ICanHaz.js templating addon - http://icanhazjs.com/
+- Simple PHP Proxy - http://benalman.com/code/projects/php-simple-proxy/docs/files/ba-simple-proxy-php.html
+
+
+
+
+
 
 
