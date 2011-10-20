@@ -1,3 +1,16 @@
-MAPSMAPPER
+MapPlotter
 
 for plotting pois on map through index search
+
+-- using --
+- Eniro Yellow API - http://api.eniro.com
+- Eniro WCM:GetAPI
+
+-- Components -
+- HTML5 Boilerplate - http://html5boilerplate.com/
+- Backbone.js - http://documentcloud.github.com/backbone/
+- jQuery 1.6.2
+- jQuery Mustache templating
+- ICanHaz.js templating addon
+
+
