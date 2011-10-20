@@ -16,6 +16,15 @@ for plotting pois on map through index search
 - Simple PHP Proxy - http://benalman.com/code/projects/php-simple-proxy/docs/files/ba-simple-proxy-php.html
 
 
+-- requires --
+PHP
+
+-- setup --
+Create an account on http://api.eniro.com
+put key and profile in config.php
+go crazy
+
+
 
 
 
