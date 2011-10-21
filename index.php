@@ -120,8 +120,8 @@ include "config.php";
     <!--script src="js/libs/json2.js"></script-->
 
     <!-- Client templating -->
-    <script src="js/libs/mustache.js/mustache.js"></script>
-    <script src="js/libs/ICanHaz.js/ICanHaz.js"></script>
+    <script src="js/libs/mustache.js"></script>
+    <script src="js/libs/ICanHaz.js"></script>
 
 
     <!-- scripts concatenated and minified via ant build script-->
