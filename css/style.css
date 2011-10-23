@@ -323,9 +323,11 @@ header h2 {
     position: relative;
 }
 
+/*
 #searchForm legend {
     position: absolute;
 }
+*/
 
 #searchForm label {
     display: inline-block;
@@ -335,10 +337,12 @@ header h2 {
 #searchForm .search-field {
     margin: 5px 0;
 }
+/*
 #searchForm .search-field.what {
     margin-top: 25px;
 
 }
+*/
 
 #results {
     display: inline-block;
