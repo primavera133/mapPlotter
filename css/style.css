@@ -329,10 +329,21 @@ header h2 {
 }
 */
 
-#searchForm label {
+#searchForm .what label,
+#searchForm .where label {
     display: inline-block;
     width: 100px;
 }
+
+#searchForm .site input[type=radio] {
+    display: inline-block;
+    /*width: 70px;*/
+    margin-left: 10px;
+}
+#searchForm .site label {
+    display: inline-block;
+}
+
 
 #searchForm .search-field {
     margin: 5px 0;
@@ -412,4 +423,16 @@ header h2 {
     margin: 10px 0;
     width: 400px;
     height: 200px;
+}
+
+
+::-webkit-input-placeholder {
+    color:#a4a4a4;
+    font-style:italic;
+    /*    font-size:15px; */
+}
+:-moz-placeholder {
+    color:#a4a4a4;
+    font-style:italic;
+    /*    font-size:15px; */
 }

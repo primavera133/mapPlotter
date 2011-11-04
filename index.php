@@ -54,25 +54,28 @@ include "config.php";
                 <form id="searchForm" action="http://api.eniro.com/cs/search/basic" method="get">
                     <input type="hidden" name="key" value="<?= $key ?>" />
                     <input type="hidden" name="profile" value="<?= $profile ?>" />
-                    <input type="hidden" name="country" value="se" />
+                    <!--input type="hidden" name="country" value="se" /-->
                     <input type="hidden" name="version" value="1.0.1" />
                     <input type="hidden" name="to_list" value="25" />
                     <input type="hidden" name="from_list" value="1" />
                     <fieldset>
-                        <legend>
-                            <strong>Sök på Eniro</strong>
-                        </legend>
+                        <div class="search-field site">
+                            <strong>Sök på</strong>
+                            <input type="radio" name="country" id="countyEniro" value="se" checked="checked"> <label for="countyEniro">Eniro</label>
+                            <input type="radio" name="country" id="countyGulesider" value="no"> <label for="countyGulesider">Gule sider</label>
+                            <input type="radio" name="country" id="countyKrak" value="krak"> <label for="countyKrak">Krak</label>
+                        </div>
 
                         <input type="hidden" name="what" value="all" />
 
                         <div class="search-field what">
                             <label for="search_word">Vad söker du?</label>
-                            <input type="text" tabindex="1" value="" name="search_word" id="search_word" />
+                            <input type="text" tabindex="1" value="" name="search_word" id="search_word" placeholder="Hotell" />
                         </div>
 
                         <div class="search-field where">
                             <label for="where">Var?</label>
-                            <input type="text" tabindex="2" value="" name="geo_area" id="where" />
+                            <input type="text" tabindex="2" value="" name="geo_area" id="where" placeholder="Örebro" />
                         </div>
 
                         <input type="submit" name="btn_all" tabindex="3" value="Sök" />
